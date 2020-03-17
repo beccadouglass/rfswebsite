@@ -1,0 +1,25 @@
+{
+  "name": "rfs",
+  "version": "1.0.0",
+  "description": "Landing page for Reflections From The Saddle",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beccadouglass/rfswebsite.git"
+  },
+  "author": "Rebecca Douglass",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beccadouglass/rfswebsite/issues"
+  },
+  "homepage": "https://github.com/beccadouglass/rfswebsite#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
