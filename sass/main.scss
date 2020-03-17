@@ -9,7 +9,7 @@ $color-primary-light: #E7EEFA;
 $color-primary-white: #faf3e7;
 $color-dark: #424141;
 $color-grey-dark: #777;
-$color-white: #ffffff;
+$color-white: #fff;
 
 *,
 *::after,
@@ -68,7 +68,7 @@ body {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
