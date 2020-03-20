@@ -1,0 +1,30 @@
+.row {
+  max-width: $grid-width; //want 1140px and that equals 114rem 
+  margin: 0 auto; //centers block element in block element
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical; //accepts everything but last child in row to add gutter vertical to
+  }
+
+  @include clearfix;
+
+  [class^="col-"] //selects all elements that start with col-
+
+    {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal; //puts space between columns as margin right but not on last column
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+
+  }
+
+}
