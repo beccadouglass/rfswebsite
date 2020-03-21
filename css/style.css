@@ -195,6 +195,24 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #b4cefc, #033387);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -239,6 +257,13 @@ body {
   background: #dfdfdf;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(231, 238, 250, 0.701), rgba(3, 51, 135, 0.801)), url(../img/Image4.png);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  margin-top: -12.7rem; }
 
 /*
 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
