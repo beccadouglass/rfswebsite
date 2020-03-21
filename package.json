@@ -4,7 +4,8 @@
   "description": "Landing page for Reflections From The Saddle",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "node your-script.js"
   },
   "repository": {
     "type": "git",
