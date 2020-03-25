@@ -4,11 +4,33 @@ $color-primary-dark: #033387;
 $color-primary-medium: #b4cefc;
 $color-primary-light: #E7EEFA;
 $color-primary-white: #faf3e7;
+
+$color-secondary-dark: #ff7730;
+$color-secondary-medium: #fa9141;
+$color-secondary-light: #ffb900;
+
+$color-tertiary-dark: #28b485;
+$color-tertiary-light: #9cdf90;
+
 $color-dark: #424141;
-$color-grey-light: #dfdfdf;
+$color-grey-light: #ededed;
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
+
+//LINEAR GRADIENT
+//$linear-gradient-1 {
+//  background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+//}
+
+//$linear-gradient-2 {
+//  background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+//}
+
+//$linear-gradient-3 {
+//  background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+//}
+
 
 //FONT
 $default-font-size: 1.6rem;

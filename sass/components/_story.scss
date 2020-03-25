@@ -1,0 +1,10 @@
+.story {
+  width: 75%;
+  margin: 0 auto; //centers block within block
+  box-shadow: 0 3rem 6rem rgba($color-grey-dark, .1);
+  background-color: $color-white;
+  border-radius: 10px;
+  padding: 6rem;
+  font-size: $default-font-size;
+
+}

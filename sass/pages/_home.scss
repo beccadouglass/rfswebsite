@@ -11,11 +11,24 @@
       rgba($color-primary-dark, 0.801)),
     url(../img/Image4.png);
   background-size: cover;
-  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
   //transform: skewY(6deg);
   margin-top: -12.7rem;
 
   &>* {
     //transform: skewY(-6deg); //only affects direct child of section features
   }
+}
+
+.section-courses {
+  background: $color-grey-light;
+  padding: 15rem 0 15rem 0;
+
+
+}
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: $color-grey-light;
 }
