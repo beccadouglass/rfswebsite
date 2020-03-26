@@ -1,0 +1,26 @@
+.footer {
+  background-color: $color-grey-dark;
+  color: $color-grey-light;
+  padding: 10rem;
+  font-size: 1.4rem;
+
+  &__copyright {
+
+    &__link {
+
+      &:link,
+      &:visted {
+        color: $color-primary-light;
+        text-decoration: none;
+        display: inline block;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-primary-light;
+        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+        transform: scale (1.3);
+      }
+    }
+  }
+}
