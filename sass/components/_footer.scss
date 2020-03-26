@@ -1,26 +1,31 @@
 .footer {
   background-color: $color-grey-dark;
   color: $color-grey-light;
-  padding: 10rem;
+  padding: 5rem;
   font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+}
 
-  &__copyright {
+.footer__copy {
+  text-decoration: none;
 
-    &__link {
+  &-link {
+    color: $color-primary-light;
 
-      &:link,
-      &:visted {
-        color: $color-primary-light;
-        text-decoration: none;
-        display: inline block;
-      }
+    &:link,
+    &:visted {
+      color: $color-primary-light;
+      text-decoration: none;
+      display: inline block;
+    }
 
-      &:hover,
-      &:active {
-        color: $color-primary-light;
-        box-shadow: 0 1rem 2rem rgba($color-black, .4);
-        transform: scale (1.3);
-      }
+    &:hover,
+    &:active {
+      color: $color-primary-light;
+      box-shadow: 0 1rem 2rem rgba($color-black, .4);
+      transform: scale (1.3);
     }
   }
+
 }

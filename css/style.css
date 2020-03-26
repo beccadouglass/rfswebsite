@@ -322,16 +322,23 @@ body {
 .footer {
   background-color: #777;
   color: #ededed;
-  padding: 10rem;
-  font-size: 1.4rem; }
-  .footer__copyright__link:link, .footer__copyright__link:visted {
-    color: #E7EEFA;
-    text-decoration: none;
-    display: inline block; }
-  .footer__copyright__link:hover, .footer__copyright__link:active {
-    color: #E7EEFA;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: scale 1.3; }
+  padding: 5rem;
+  font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none; }
+
+.footer__copy {
+  text-decoration: none; }
+  .footer__copy-link {
+    color: #E7EEFA; }
+    .footer__copy-link:link, .footer__copy-link:visted {
+      color: #E7EEFA;
+      text-decoration: none;
+      display: inline block; }
+    .footer__copy-link:hover, .footer__copy-link:active {
+      color: #E7EEFA;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: scale 1.3; }
 
 .form {
   /*
