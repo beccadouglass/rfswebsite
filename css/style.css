@@ -1,3 +1,10 @@
+/* 0-600px: phone
+600-900px: tablet portrait
+900-1200px: tablet landcape
+1200-1800px: normal style
+1800ox + : big screen
+always use em for this declaration and 1 em = 16px
+*/
 /*animation-delay: 1s;
     animation-iteration-count: 3;
     */
@@ -38,6 +45,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
+  @media (min-width: 125em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
