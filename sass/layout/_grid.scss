@@ -4,6 +4,15 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical; //accepts everything but last child in row to add gutter vertical to
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
+
+  }
+
+  @include respond(tab-port) {
+    max-width: 50rem;
   }
 
   @include clearfix;
@@ -15,6 +24,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal; //puts space between columns as margin right but not on last column
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
 

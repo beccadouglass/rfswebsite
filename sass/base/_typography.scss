@@ -1,10 +1,15 @@
+//font-family: 'Abel', sans-serif;
+//font-family: 'Acme', sans-serif;
+//font-family: 'Montserrat Alternates', sans-serif;
+//font-family: "Lato", sans-serif;
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 3rem;
+
 }
 
 .heading-primary {
@@ -22,6 +27,11 @@ body {
     text-align: center;
     animation: moveInLeft 1.2s ease-out;
 
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+
   }
 
   &--sub {
@@ -31,6 +41,10 @@ body {
     letter-spacing: 1.75rem;
     text-align: center;
     animation: moveInRight 1.2s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -45,6 +59,14 @@ body {
   letter-spacing: 2px;
   transition: all .2s;
 
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
   &:hover {
     transform: skewY(1deg) skewX(10deg) scale(1.05);
     text-shadow: .5rem 1rem 2rem rgba($color-dark, .2);
@@ -56,6 +78,7 @@ body {
   font-size: $default-font-size;
   font-weight: 600;
   text-transform: uppercase;
+  font-family: 'Acme', sans-serif;
 }
 
 .paragraph {
