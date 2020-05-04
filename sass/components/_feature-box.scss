@@ -7,6 +7,12 @@
   box-shadow: 0 1.5rem 4rem rgba($color-dark, .15);
   transition: transform .3s;
 
+
+  @include respond(tab-port) {
+    padding: 0rem;
+    margin: 4rem;
+  }
+
   &__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -21,4 +27,13 @@
   }
 
   &__text {}
+}
+
+.fade-feature {
+  background-image:
+    linear-gradient(to right bottom,
+      rgba($color-primary-light, 0.701),
+      rgba($color-primary-dark, 0.801));
+  padding: 5rem;
+
 }

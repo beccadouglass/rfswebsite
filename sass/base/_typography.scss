@@ -28,7 +28,7 @@ body {
     animation: moveInLeft 1.2s ease-out;
 
     @include respond(phone) {
-      letter-spacing: 1rem;
+      letter-spacing: .2rem;
       font-size: 5rem;
     }
 
@@ -41,6 +41,7 @@ body {
     letter-spacing: 1.75rem;
     text-align: center;
     animation: moveInRight 1.2s ease-out;
+    margin-top: 2rem;
 
     @include respond(phone) {
       letter-spacing: 0.5rem;

@@ -89,7 +89,7 @@ body {
     animation: moveInLeft 1.2s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        letter-spacing: 1rem;
+        letter-spacing: .2rem;
         font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
@@ -97,7 +97,8 @@ body {
     font-weight: 70rem;
     letter-spacing: 1.75rem;
     text-align: center;
-    animation: moveInRight 1.2s ease-out; }
+    animation: moveInRight 1.2s ease-out;
+    margin-top: 2rem; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem; } }
@@ -144,9 +145,15 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem; } }
 
 .u-margin-top-big {
   margin-top: 8 rem; }
@@ -236,7 +243,7 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(66, 65, 65, 0.2); }
     .card__side--front {
@@ -273,9 +280,9 @@ body {
     color: #fff;
     position: absolute;
     top: 0rem;
-    right: .5rem;
+    right: 0.5rem;
     width: 100%;
-    word-spacing: .4rem; }
+    word-spacing: 0.4rem; }
   .card__heading-span--1 {
     background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
   .card__heading-span--2 {
@@ -311,6 +318,34 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 0px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(66, 65, 65, 0.2); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+          border-radius: 0px; }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__price-box {
+        margin-bottom: 8rem; }
+      .card__price-value {
+        font-size: 6rem; } }
 
 .composition {
   position: relative; }
@@ -322,15 +357,32 @@ body {
     z-index: 10;
     transition: all .2s;
     outline-offset: 2rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.33333%; } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: -1; } }
     .composition__photo--p2 {
       right: 0;
       top: 5rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p2 {
+          top: 1.5;
+          transform: scale(1.3);
+          z-index: 100; } }
     .composition__photo--p3 {
       left: 20%;
       top: 15rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 0;
+          left: 0; } }
     .composition__photo:hover {
       outline: 1.5rem solid #497BD2;
       transform: scale(1.05) translateY(-0.5rem);
@@ -347,6 +399,10 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(66, 65, 65, 0.15);
   transition: transform .3s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 0rem;
+      margin: 4rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -356,6 +412,10 @@ body {
     color: transparent; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+
+.fade-feature {
+  background-image: linear-gradient(to right bottom, rgba(231, 238, 250, 0.701), rgba(3, 51, 135, 0.801));
+  padding: 5rem; }
 
 .footer {
   background-color: #777;
@@ -440,6 +500,9 @@ body {
     width: 90%;
     display: block;
     transition: all .3s; }
+    @media (max-width: 56.25em) {
+      .form__input {
+        width: 100%; } }
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(119, 119, 119, 0.5);
@@ -459,6 +522,11 @@ body {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem); }
+  .form #message {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    word-wrap: normal; }
 
 .popup {
   height: 100vh;
@@ -476,8 +544,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 100%;
     display: table;
+    position: absolute;
+    margin: 0 auto;
     box-shadow: 0 2rem 4rem rgba(119, 119, 119, 0.2);
     background-color: #fff;
     border-radius: 10px;
@@ -538,6 +608,14 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 120%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -548,6 +626,9 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__img {
     height: 100%;
     width: 100%;
@@ -555,6 +636,9 @@ body {
     transition: all .5s; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -598,7 +682,8 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -621,7 +706,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(231, 238, 250, 0.701), rgba(3, 51, 135, 0.801)), url(../img/reflections.jpg);
+  background-image: url(../img/reflections.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -639,12 +724,17 @@ body {
     height: 6rem;
     opacity: 0.3; }
   .header__text-box {
+    background-image: linear-gradient(to right bottom, rgba(231, 238, 250, 0.701), rgba(3, 51, 135, 0.801));
     width: 150vh;
+    height: 30rem;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 37.5em) {
+      .header__text-box {
+        height: 25rem; } }
 
 .navigation__checkbox {
   display: none; }
@@ -661,6 +751,14 @@ body {
   box-shadow: 0 1rem 3rem rgba(119, 119, 119, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   height: 5rem;
@@ -672,6 +770,14 @@ body {
   background-image: radial-gradient(#497BD2, #033387);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.895, 0.03, 0.685, 0.22); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -756,20 +862,36 @@ body {
 
 .section-about {
   background: #ededed;
-  padding: 25rem 0;
-  margin-top: -20vh; }
+  padding: 25rem 5rem;
+  margin-top: -20vh;
+  padding-bottom: 40rem; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 20rem 0 20rem 0; } }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding: 30rem 0 20rem 0; } }
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(231, 238, 250, 0.701), rgba(3, 51, 135, 0.801)), url(../img/Image4.png);
+  background-position: center;
+  background-image: url(../img/Image4.png);
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
   margin-top: -12.7rem; }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 10rem 0;
+      -webkit-clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 100%); } }
 
 .section-courses {
   background: #ededed;
   padding: 15rem 0 15rem 0; }
+  @media (max-width: 56.25em) {
+    .section-courses {
+      padding: 10rem 0 10rem 0; } }
 
 .section-stories {
   padding: 5rem 0;
@@ -780,14 +902,25 @@ body {
   background-image: linear-gradient(to right bottom, rgba(231, 238, 250, 0.701), rgba(3, 51, 135, 0.801)); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 45%, transparent 45%), url(../img/contact.png);
+  background-image: linear-gradient(75deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 45%), url(../img/contact.png);
   background-size: cover;
   border-radius: 10px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 50rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/contact.png); } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 60%), url(../img/contact.png); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
 
 /*
 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);

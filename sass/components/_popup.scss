@@ -13,10 +13,10 @@
 
   &__content {
     @include absCenter;
-    width: 75%;
+    width: 100%;
     display: table;
-    //position: absolute;
-    //margin: 0 auto; //centers block within block
+    position: absolute;
+    margin: 0 auto; //centers block within block
     box-shadow: 0 2rem 4rem rgba($color-grey-dark, .2);
     background-color: $color-white;
     border-radius: 10px;

@@ -1,9 +1,6 @@
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom,
-      rgba($color-primary-light, 0.701),
-      rgba($color-primary-dark, 0.801)),
-    url(../img/reflections.jpg);
+  background-image: url(../img/reflections.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -29,11 +26,19 @@
   }
 
   &__text-box {
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.701), rgba($color-primary-dark, 0.801));
+    // background-image: radial-gradient($color-primary, $color-primary-dark);
     width: 150vh;
+    height: 30rem;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    // margin-bottom: 4rem;
+    @include respond(phone) {
+      height: 25rem;
+    }
   }
 }
