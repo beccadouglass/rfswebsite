@@ -64,21 +64,36 @@
       background-image: linear-gradient(to right bottom,
           $color-secondary-light,
           $color-secondary-dark),
-        url(../img/palomino.png);
+        url(../img/palominosm.png);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: url(../img/palomino.png);
+      }
     }
 
     &--2 {
       background-image: linear-gradient(to right bottom,
           $color-primary,
           $color-primary-dark),
-        url(../img/flea-bitten.jpg);
+        url(../img/flea-bittensm.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: url(../img/flea-bitten.jpg);
+      }
     }
 
     &--3 {
       background-image: linear-gradient(to right bottom,
           $color-tertiary-light,
           $color-tertiary-dark),
-        url(../img/black-horse.jpg);
+        url(../img/black-horsesm.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: url(../img/black-horse.jpg);
+      }
     }
   }
 

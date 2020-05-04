@@ -20,12 +20,17 @@
     // linear-gradient(to right bottom,
     //     rgba($color-primary-light, 0.701),
     //     rgba($color-primary-dark, 0.801)),
-    url(../img/Image4.png);
+    url(../img/Image4sm.png);
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
   //transform: skewY(6deg);
   margin-top: -12.7rem;
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+  (min-width: 125em) {
+    background-image: url(../img/Image4.jpg);
+  }
 
   &>* {
     //transform: skewY(-6deg); //only affects direct child of section features
@@ -66,11 +71,17 @@
 .book {
   background-image: linear-gradient(75deg, rgba($color-white, .9) 0%,
       rgba($color-white, .9) 55%,
-      transparent 45%), url(../img/contact.png); //this code does first 50% white and second transparent 
+      transparent 45%), url(../img/contactsm.png); //this code does first 50% white and second transparent 
   background-size: cover;
   border-radius: 10px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+  (min-width: 125em) {
+    background-image: background-image: linear-gradient(75deg, rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 55%,
+        transparent 45%), url(../img/contact.png);
+  }
 
   @include respond (tab-land) {
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/contact.png);
